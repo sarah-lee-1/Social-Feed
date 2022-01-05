@@ -1,33 +1,13 @@
 import React, { useState } from 'react';
-
+import DisplayEntries from './Components/DisplayEntries/DisplayEntries';
 
 function App() {
 
-  const [entries, setEntries] = useState([{Index: '', name: 'Buddy the Elf', post: 'Merry Christmas'}, {index: '', name: 'Scrooge', post: 'Bah Humbug'}])
+  const [entries, setEntries] = useState([{Index: '', name: 'Buddy the Elf', post: 'Merry Christmas', status: 'Thumbs Up'}, {index: '', name: 'Scrooge', post: 'Bah Humbug', status: 'Thumbs Down'}])
 
   return (
     <div>
-      <table>
-        <thead>
-         <tr>
-           <th>Post#</th>
-           <th>Name:</th>
-           <th>Post:</th>
-           </tr> 
-        </thead>
-        <tbody>
-          {entries.map((entry, index) =>{
-            return (
-              <tr>
-                <td>{index + 1}</td>
-                <td>{entry.name}</td>
-                <td>{entry.post}</td>
-              </tr>
-            );
-          })}
-        </tbody>
-
-      </table>
+      <DisplayEntries parentEntries={entries}/>
     </div>
   );
 }
