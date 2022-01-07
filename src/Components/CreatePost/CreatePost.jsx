@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 
-const AddEntryForm = (props) => {
+const CreatePost = (props) => {
 
     const [name, setName] = useState('');
     const [post, setPost] = useState('');
@@ -31,4 +31,4 @@ const AddEntryForm = (props) => {
      );
 }
  
-export default AddEntryForm;
+export default CreatePost;

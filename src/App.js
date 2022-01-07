@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import DisplayEntries from './Components/DisplayEntries/DisplayEntries';
-import AddEntryForm from './Components/AddEntry/AddEntryForm';
+import DisplayPosts from './Components/DisplayPosts/DisplayPosts';
+import CreatePost from './Components/CreatePost/CreatePost';
 
 function App() {
 
@@ -15,8 +15,8 @@ function App() {
 
   return (
     <div>
-      <DisplayEntries parentEntries={entries}/>
-      <AddEntryForm addNewEntryProperty={addNewEntry}/>
+      <DisplayPosts parentEntries={entries}/>
+      <CreatePost addNewEntryProperty={addNewEntry}/>
     </div>
   );
 }
