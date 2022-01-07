@@ -1,3 +1,4 @@
+import LikeButton from "../LikeButton/LikeButton";
 
 const DisplayPosts = (props) => {
     return ( 

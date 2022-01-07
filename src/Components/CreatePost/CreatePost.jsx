@@ -24,9 +24,6 @@ const CreatePost = (props) => {
             <input type='paragraph' value={post} onChange={(event) => setName(event.target.value)} />
             <label>Status</label>
             <button type='submit'>Add</button>
-            <label>Rank</label>
-            {/* <button type='status'>Thumbs Up/Thumbs Down</button> */}
-            {/* <button type='submit'>Thumbs Down</button> */}
         </form>
      );
 }
