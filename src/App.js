@@ -8,15 +8,15 @@ function App() {
 
   function addNewEntry(entry) {
 
-    let tempEntries = [...entries, entry];
+    let tempEntries = [entry, ...entries,];
     
     setEntries(tempEntries);
   }
 
   return (
     <div>
-      <DisplayPosts parentEntries={entries}/>
       <CreatePost addNewEntryProperty={addNewEntry}/>
+      <DisplayPosts parentEntries={entries}/>
      
     </div>
   );
