@@ -1,13 +1,11 @@
-
 import React, { useState } from 'react';
 // import likebutton.css
-
+// import "./styles.css"; 
 
 const LikeButton = () => {
     const [state, setState] = useState(false);
 
     function likeUnlike() {
-    
         setState(!state);
 
     }
