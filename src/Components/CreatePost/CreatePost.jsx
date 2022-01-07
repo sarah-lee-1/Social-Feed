@@ -25,7 +25,7 @@ const CreatePost = (props) => {
             <label>Status</label>
             <button type='submit'>Add</button>
             <label>Rank</label>
-            <button type='status'>Thumbs Up/Thumbs Down</button>
+            {/* <button type='status'>Thumbs Up/Thumbs Down</button> */}
             {/* <button type='submit'>Thumbs Down</button> */}
         </form>
      );

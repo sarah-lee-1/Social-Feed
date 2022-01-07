@@ -7,7 +7,7 @@ const DisplayPosts = (props) => {
            <th>Post#</th>
            <th>Name:</th>
            <th>Post:</th>
-           <th>Status:</th>
+           <th></th>
            </tr> 
         </thead>
         <tbody>
@@ -17,7 +17,7 @@ const DisplayPosts = (props) => {
                 <td>{index + 1}</td>
                 <td>{entry.name}</td>
                 <td>{entry.post}</td>
-                <td>{entry.status}</td>
+                <td><LikeButton /></td>
               </tr>
             );
           })}

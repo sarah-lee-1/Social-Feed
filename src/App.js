@@ -17,6 +17,7 @@ function App() {
     <div>
       <DisplayPosts parentEntries={entries}/>
       <CreatePost addNewEntryProperty={addNewEntry}/>
+     
     </div>
   );
 }
