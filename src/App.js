@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import DisplayPosts from './Components/DisplayPosts/DisplayPosts';
 import CreatePost from './Components/CreatePost/CreatePost';
 import './App.css';
