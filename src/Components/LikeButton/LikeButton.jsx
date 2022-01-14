@@ -3,17 +3,33 @@ import React, { useState } from 'react';
 // import "./styles.css"; 
 
 const LikeButton = () => {
-    const [state, setState] = useState(false);
+    const [state, setState] = useState();
+    const [status, setStatus] = useState('');
 
-    function likeUnlike() {
-        setState(!state);
+    function like() {
+        setState(true);
+        setStatus('Liked');
+
+    }
+
+    function dislike() {
+        setState(false);
+        setStatus('Disliked');
 
     }
     
     return ( 
-        <button onClick={likeUnlike} className={'toggle--button '+ (state ? 'toggle--Like': 'toggle--Unlike')}>
-            {state ? 'Like' :'Unlike'}
+        <>
+                
+        <button onClick={like} className={'toggle--button '+ (state ? 'toggle--Like': 'toggle--Unlike')}>
+            Like 😍
         </button>
+        <h5>{status}</h5>
+        <button onClick={dislike} className={'toggle--button '+ (state ? 'toggle--Like': 'toggle--Unlike')}>
+            Dislike 😕
+        </button>
+
+        </>
     );
 }
 
