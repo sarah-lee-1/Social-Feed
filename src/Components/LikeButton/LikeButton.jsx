@@ -8,13 +8,11 @@ const LikeButton = () => {
     function like() {
         setState(true);
         setStatus('Liked');
-
     }
 
     function dislike() {
         setState(false);
         setStatus('Disliked');
-
     }
     
     return ( 
